@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site WordPress Style - One Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #0073aa;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      color: #ffdd57;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section:nth-child(even) {
+      background: #fff;
+    }
+
+    section:nth-child(odd) {
+      background: #e8f0f8;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      border-left: 5px solid #0073aa;
+      padding-left: 10px;
+    }
+
+    .btn {
+      background: #0073aa;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #005f8a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+    }
+
+    .blog-post {
+      margin-bottom: 20px;
+    }
+
+    .blog-post h3 {
+      color: #0073aa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Bienvenue</h2>
+    <p>Ce site est une démonstration d’une page HTML/CSS/JS inspirée du style WordPress.</p>
+    <a href="#contact" class="btn">Nous contacter</a>
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Nous sommes une équipe passionnée par le développement web, l’UI/UX et la création de solutions modernes pour le web.</p>
+  </section>
+
+  <section id="services">
+    <h2>Nos services</h2>
+    <ul>
+      <li>Création de sites web</li>
+      <li>Design responsive</li>
+      <li>Optimisation SEO</li>
+      <li>Développement WordPress sur-mesure</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-post">
+      <h3>🔥 5 astuces pour améliorer votre SEO</h3>
+      <p>Découvrez comment booster la visibilité de votre site sur Google en 2025...</p>
+    </div>
+    <div class="blog-post">
+      <h3>🎨 Le design web moderne en 2025</h3>
+      <p>Tendances, animations et ergonomie : tout ce que vous devez savoir.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Envie de travailler ensemble ? Envoyez-nous un message :</p>
+    <form onsubmit="event.preventDefault(); alert('Message envoyé !');">
+      <input type="text" placeholder="Votre nom" required style="width:100%; padding:10px; margin-bottom:10px;" />
+      <input type="email" placeholder="Votre email" required style="width:100%; padding:10px; margin-bottom:10px;" />
+      <textarea placeholder="Votre message" required style="width:100%; padding:10px; height:100px;"></textarea>
+      <br />
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 - MonSiteWordPressLike.fr - Tous droits réservés
+  </footer>
+</body>
+</html>
